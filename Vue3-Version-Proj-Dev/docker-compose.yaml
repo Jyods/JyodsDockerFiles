@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  vue_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "6547:6547"
+    volumes:
+      - ./app:/app
+    working_dir: /app
